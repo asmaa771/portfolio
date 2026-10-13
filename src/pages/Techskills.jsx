@@ -45,17 +45,17 @@ export default function TechSkillsScreen() {
   return (
     <div id="skills" className="bg-gray-100 min-h-screen font-sans relative selection:bg-orange-500 selection:text-white pb-20">
       
-      {/* Main Section: Services & Skills */}
+      
       <section className="max-w-7xl mx-auto px-6 md:px-12 pt-4  md:pt-20">
          <div className="flex items-center justify-start mb-6">
         <span className="text-orange-500 font-semibold border border-gray-200 bg-white px-4 py-2 rounded-2xl shadow-sm text-sm uppercase tracking-wider">
           services
         </span>
       </div>
-        {/* Section Header & Grid Container */}
+        
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
-          {/* Left Column: Titles & Subtitle */}
+           
           <div className="lg:col-span-4 flex flex-col items-start">
             <div className="flex items-center gap-3 mb-3" data-aos="fade-up">
               <span className="w-8 h-[2px] bg-orange-500"></span>
@@ -76,7 +76,7 @@ export default function TechSkillsScreen() {
             </div>
           </div>
 
-          {/* Right Column: Skills & Services Cards Grid */}
+           
           <div className="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-full">
             {servicesAndSkills.map((item, index) => (
               <motion.div
@@ -117,7 +117,7 @@ export default function TechSkillsScreen() {
         <div className="border-t border-neutral-200 pt-16">
           
           {/* Header */}
-          <div className="flex flex-col items-center text-center mb-10">
+          <div data-aos="fade-up" className="flex flex-col items-center text-center mb-10">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-100 text-blue-700 text-xs font-medium mb-3">
               <FaAward size={14} className="text-blue-600" />
               ACCREDITED CREDENTIAL
@@ -141,7 +141,7 @@ export default function TechSkillsScreen() {
             <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
               
               
-              <div className="md:col-span-12 flex flex-col justify-between">
+              <div  data-aos="fade-up" className="md:col-span-12 flex flex-col justify-between">
                 <div>
                   <div className="flex items-center justify-between mb-2">
                     <span className="text-[11px] font-semibold text-blue-700 bg-blue-50 px-2.5 py-1 rounded-md border border-blue-100">

@@ -9,7 +9,7 @@ import Contactme from './Contactme'
 const Home = () => {
     const googleDriveDownloadLink = "https://drive.google.com/uc?export=download&id=1d5A3DIY8Joq21Wc_OoTvdrC6Bxis66aH";
   return (
-    <div id="home" className='bg-gray-100 min-h-screen min-w-screen md:py-20 md:px-2 '>
+    <div id="home" className='bg-gray-100 min-h-screen min-w-screen   md:py-20 md:px-2 '>
       
        <>
             

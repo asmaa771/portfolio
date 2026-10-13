@@ -56,10 +56,8 @@ const Contactme = () => {
       <div className="max-w-6xl mx-auto space-y-12">
         
         
-        <div  className="text-center space-y-3 max-w-xl mx-auto">
-          <span className="text-xs uppercase tracking-widest font-bold text-gray-500 bg-white border border-gray-200 px-4 py-1.5 rounded-full shadow-sm">
-            Contact us
-          </span>
+        <div data-aos="fade-up" className="text-center space-y-3 max-w-xl mx-auto">
+           
           <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight mt-6">
             Contact us
           </h2>
@@ -72,7 +70,7 @@ const Contactme = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           
           
-          <div className="lg:col-span-5 bg-white border border-gray-200 p-8 rounded-3xl shadow-sm flex flex-col justify-between space-y-12">
+          <div data-aos="fade-up" className="lg:col-span-5 bg-white border border-gray-200 p-8 rounded-3xl shadow-sm flex flex-col justify-between space-y-12">
             <div className="space-y-6">
               <a href="tel:+201100485476" className="block text-2xl md:text-3xl font-extrabold hover:text-orange-500 transition-colors">
                 +20 1100485476
@@ -119,7 +117,7 @@ const Contactme = () => {
           </div>
 
            
-          <div className="lg:col-span-7 bg-white border border-gray-200 p-8 rounded-3xl shadow-sm">
+          <div data-aos="fade-up" className="lg:col-span-7 bg-white border border-gray-200 p-8 rounded-3xl shadow-sm">
             <div className="mb-6 space-y-1">
               <h3 className="text-2xl font-bold">Send Us a Message</h3>
               <p className="text-gray-500 text-sm">

@@ -1,14 +1,13 @@
- 
-
-import React from 'react';
+ import React from 'react';
 import { IoLogoLinkedin } from "react-icons/io5";
 import { FaGithub } from "react-icons/fa";
+import { motion } from "framer-motion"; // استيراد مكتبة framer-motion
 
 const Aboutpage = () => {
   const googleDriveDownloadLink = "https://drive.google.com/uc?export=download&id=1d5A3DIY8Joq21Wc_O-TvdrC6Bxis66aH";
 
   return (
-    <section id="about" className="about bg-gray-100 min-w-screen   min-h-screen px-6 md:px-30 md:py-16  py-4 font-sans">
+    <section id="about" className="about bg-gray-100 min-w-screen min-h-screen px-6 md:px-30 md:py-16 py-4 font-sans[cite: 8]">
       {/* بادئة العنوان */}
       <div className="flex items-center justify-start mb-6">
         <span className="text-orange-500 font-semibold border border-gray-200 bg-white px-4 py-2 rounded-2xl shadow-sm text-sm uppercase tracking-wider">
@@ -16,7 +15,7 @@ const Aboutpage = () => {
         </span>
       </div>
 
-      <div className="max-w-7xl  grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+      <div className="max-w-7xl grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
         
         {/* القسم الأيسر: النصوص والنبذة التعريفية */}
         <div data-aos="fade-up" className="lg:col-span-7 flex flex-col justify-between space-y-8">
@@ -29,7 +28,7 @@ const Aboutpage = () => {
             <p className="text-gray-600 text-base md:text-lg leading-relaxed max-w-2xl">
               Hi, I'm a Front-End Developer passionate about building modern, responsive, and user-friendly web interfaces. 
               I specialize in building web applications using <span className="text-gray-900 font-semibold">React.js</span> and <span className="text-gray-900 font-semibold">Next.js</span>, along with JavaScript and Tailwind CSS. I enjoy creating clean, reusable, and interactive UI components while focusing on a smooth user experience. 
-              I'm always learning, improving my skills, and building real-world projects to grow as a Front-End Developer.
+              I'm always learning, improving my skills, and building real-world projects to grow as a Front-End Developer.[cite: 8]
             </p>
           </div>
 
@@ -91,27 +90,55 @@ const Aboutpage = () => {
           </div>
         </div>
 
-        {/* القسم الأيمن: البطاقات الإحصائية والمميزات */}
+        {/* القسم الأيمن: البطاقات الإحصائية والمميزات (تم تصحيح الـ motion وحذف المتغيرات غير المعرفة) */}
         <div className="lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div className="bg-white border border-gray-200 p-6 rounded-2xl flex flex-col justify-between hover:border-orange-500 shadow-sm transition-all">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.4 }}
+            whileHover={{ y: -4 }}
+            className="bg-white border border-gray-200 p-6 rounded-2xl flex flex-col justify-between hover:border-orange-500 shadow-sm transition-all cursor-pointer"
+          >
             <span className="text-3xl sm:text-4xl font-extrabold text-orange-500">1+</span>
             <span className="text-sm text-gray-600 mt-4 font-medium">Successful projects completed</span>
-          </div>
+          </motion.div>
           
-          <div className="bg-white border border-gray-200 p-6 rounded-2xl flex flex-col justify-between hover:border-orange-500 shadow-sm transition-all">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.4, delay: 0.1 }}
+            whileHover={{ y: -4 }}
+            className="bg-white border border-gray-200 p-6 rounded-2xl flex flex-col justify-between hover:border-orange-500 shadow-sm transition-all cursor-pointer"
+          >
             <span className="text-3xl sm:text-4xl font-extrabold text-orange-500">Clean</span>
             <span className="text-sm text-gray-600 mt-4 font-medium">Writing scalable & clean code</span>
-          </div>
+          </motion.div>
 
-          <div className="bg-white border border-gray-200 p-6 rounded-2xl flex flex-col justify-between hover:border-orange-500 shadow-sm transition-all">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.4, delay: 0.2 }}
+            whileHover={{ y: -4 }}
+            className="bg-white border border-gray-200 p-6 rounded-2xl flex flex-col justify-between hover:border-orange-500 shadow-sm transition-all cursor-pointer"
+          >
             <span className="text-3xl sm:text-4xl font-extrabold text-orange-500">100%</span>
             <span className="text-sm text-gray-600 mt-4 font-medium">Responsive & Clean Interfaces</span>
-          </div>
+          </motion.div>
           
-          <div className="bg-white border border-gray-200 p-6 rounded-2xl flex flex-col justify-between hover:border-orange-500 shadow-sm transition-all">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.4, delay: 0.3 }}
+            whileHover={{ y: -4 }}
+            className="bg-white border border-gray-200 p-6 rounded-2xl flex flex-col justify-between hover:border-orange-500 shadow-sm transition-all cursor-pointer"
+          >
             <span className="text-3xl sm:text-4xl font-extrabold text-orange-500">Fast</span>
             <span className="text-sm text-gray-600 mt-4 font-medium">Performance & Load Times</span>
-          </div>
+          </motion.div>
         </div> 
 
       </div>       
@@ -120,3 +147,5 @@ const Aboutpage = () => {
 };
 
 export default Aboutpage;
+
+
