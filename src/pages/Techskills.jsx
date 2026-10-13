@@ -3,7 +3,7 @@ import { FaReact, FaJs, FaServer, FaCode, FaAward, FaCheckCircle, FaExternalLink
 import { SiNextdotjs, SiTailwindcss } from "react-icons/si";
 import { TbApi } from "react-icons/tb";
 import { motion } from "framer-motion";
- import photo from "../assets/WhatsApp Image 2026-10-12 at 4.05.28 PM.jpeg"
+  
  
 const servicesAndSkills = [
   {

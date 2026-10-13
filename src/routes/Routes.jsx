@@ -2,7 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Aboutpage from "../pages/Aboutpage";
 import Home from "../pages/Home";
-import Certificates from "../pages/Certificates";
+ 
 import Contactme from "../pages/Contactme";
 import Techskills from "../pages/Techskills";
 import Projectspage from "../pages/Projectspage";
@@ -20,10 +20,7 @@ children:[
         path:"",
         element:<Home></Home>
     },
- {
-        path:"/certificates",
-        element:<Certificates></Certificates>
-    },
+  
      {
         path:"/Contact",
         element:<Contactme></Contactme>
