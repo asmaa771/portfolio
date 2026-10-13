@@ -1,0 +1,9 @@
+@import "tailwindcss";
+html {
+  scroll-behavior: smooth;
+}
+
+/* ترك مسافة تلقائية فوق أي سكشن يمتلك ID عشان الـ Navbar الثابت ما يغطيهوش */
+section[id], div[id] {
+  scroll-margin-top: 100px; 
+}
