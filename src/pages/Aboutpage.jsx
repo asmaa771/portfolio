@@ -7,7 +7,7 @@ const Aboutpage = () => {
   const googleDriveDownloadLink = "https://drive.google.com/uc?export=download&id=1d5A3DIY8Joq21Wc_O-TvdrC6Bxis66aH";
 
   return (
-    <section id="about" className="about bg-gray-100 min-w-screen min-h-screen px-6 md:px-30 md:py-16 py-4 font-sans[cite: 8]">
+    <section id="about" className="about bg-gray-100 min-w-screen min-h-screen md:py-13   py-4 px-6 md:px-30   font-sans[cite: 8]">
       {/* بادئة العنوان */}
       <div className="flex items-center justify-start mb-6">
         <span className="text-orange-500 font-semibold border border-gray-200 bg-white px-4 py-2 rounded-2xl shadow-sm text-sm uppercase tracking-wider">
