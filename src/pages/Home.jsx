@@ -489,7 +489,7 @@ import TechSkillsScreen from './Techskills';
 import Contactme from './Contactme';
 
 const Home = () => {
-  const googleDriveDownloadLink = "https://drive.google.com/uc?export=download&id=1d5A3DIY8Joq21Wc_OoTvdrC6Bxis66aH";
+  const googleDriveDownloadLink = "https://drive.google.com/file/d/11CYAxF0YfS1o8KQGyNe2_yWS4yLM-mgi/view?usp=sharing";
 
   return (
     <div id="home" className="bg-gray-100 text-stone-200 min-h-screen min-w-screen overflow-hidden font-sans relative">
