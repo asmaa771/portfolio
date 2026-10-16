@@ -24,9 +24,9 @@ const Contactme = () => {
     e.preventDefault();
     setLoading(true);
 
-    const SERVICE_ID = 'service_your_id';
-    const TEMPLATE_ID = 'template_your_id';
-    const PUBLIC_KEY = 'user_your_public_key';
+    const SERVICE_ID = 'service_pl2rfiz';
+    const TEMPLATE_ID = 'template_ty4p2qe';
+    const PUBLIC_KEY = '9U0_CCOSjQpYt7JOR';
 
     emailjs.send(SERVICE_ID, TEMPLATE_ID, formData, PUBLIC_KEY)
       .then((result) => {

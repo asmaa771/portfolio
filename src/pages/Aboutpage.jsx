@@ -1,14 +1,14 @@
  import React from 'react';
 import { IoLogoLinkedin } from "react-icons/io5";
 import { FaGithub } from "react-icons/fa";
-import { motion } from "framer-motion"; // استيراد مكتبة framer-motion
+import { motion } from "framer-motion";  
 
 const Aboutpage = () => {
   const googleDriveDownloadLink = "https://drive.google.com/uc?export=download&id=1d5A3DIY8Joq21Wc_O-TvdrC6Bxis66aH";
 
   return (
     <section id="about" className="about bg-gray-100 min-w-screen min-h-screen md:py-13   py-4 px-6 md:px-30   font-sans[cite: 8]">
-      {/* بادئة العنوان */}
+       
       <div className="flex items-center justify-start mb-6">
         <span className="text-orange-500 font-semibold border border-gray-200 bg-white px-4 py-2 rounded-2xl shadow-sm text-sm uppercase tracking-wider">
           About Me
@@ -17,14 +17,14 @@ const Aboutpage = () => {
 
       <div className="max-w-7xl grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
         
-        {/* القسم الأيسر: النصوص والنبذة التعريفية */}
+        
         <div data-aos="fade-up" className="lg:col-span-7 flex flex-col justify-between space-y-8">
           <div>
             <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight text-gray-900 mb-4 leading-tight">
               Hi, I'm a <span className="text-orange-500">Frontend Developer</span>
             </h2>
             
-            {/* الوصف */}
+            
             <p className="text-gray-600 text-base md:text-lg leading-relaxed max-w-2xl">
               Hi, I'm a Front-End Developer passionate about building modern, responsive, and user-friendly web interfaces. 
               I specialize in building web applications using <span className="text-gray-900 font-semibold">React.js</span> and <span className="text-gray-900 font-semibold">Next.js</span>, along with JavaScript and Tailwind CSS. I enjoy creating clean, reusable, and interactive UI components while focusing on a smooth user experience. 
@@ -32,10 +32,10 @@ const Aboutpage = () => {
             </p>
           </div>
 
-          {/* قسم التعليم والخبرات والروابط */}
+           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-4 border-t border-gray-200">
             
-            {/* التعليم */}
+            
             <div className="education space-y-3">
               <h3 className="text-gray-900 text-xl font-bold flex items-center gap-2">
                 🎓 Education
@@ -50,7 +50,7 @@ const Aboutpage = () => {
               </div>
             </div>
 
-            {/* الخبرة والروابط */}
+            
             <div className="space-y-6">
               <div className="experience space-y-2">
                 <h3 className="text-gray-900 text-xl font-bold flex items-center gap-2">
@@ -62,7 +62,7 @@ const Aboutpage = () => {
                 </div>
               </div>
 
-              {/* الروابط */}
+               
               <div className="links space-y-2">
                 <h3 className="text-gray-900 text-lg font-bold">Connect With Me</h3>
                 <div className="flex gap-3">
@@ -90,7 +90,7 @@ const Aboutpage = () => {
           </div>
         </div>
 
-        {/* القسم الأيمن: البطاقات الإحصائية والمميزات (تم تصحيح الـ motion وحذف المتغيرات غير المعرفة) */}
+         
         <div className="lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 gap-4">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}

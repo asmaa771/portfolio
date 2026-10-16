@@ -112,11 +112,11 @@ export default function TechSkillsScreen() {
 
       </section>
 
-      {/* Certification Section */}
+      
       <section className="max-w-7xl mx-auto px-6 md:px-12 pt-20">
         <div className="border-t border-neutral-200 pt-16">
           
-          {/* Header */}
+          
           <div data-aos="fade-up" className="flex flex-col items-center text-center mb-10">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-100 text-blue-700 text-xs font-medium mb-3">
               <FaAward size={14} className="text-blue-600" />
